@@ -24,11 +24,18 @@
 <%= form_with model: @book, url: book_path(@book.id), method: :patch do |book| %>
 
 <div class="edit">
-  <h4>Title</h4>
-  <%= book.text_field :title %>
-
-  <h4>Body</h4>
-  <%= book.text_area :body %>
+    <div class="create_box1">
+    <%= book.label :title %>
+    </div>
+    <div class="create_box2">
+    <%= book.text_field :title %>
+    </div>
+    <div class="create_box3">
+    <%= book.label :body %>
+    </div>
+    <div class="create_box4">
+    <%= book.text_area :body %>
+    </div>
 </div>
 
 <div class="edit">

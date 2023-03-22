@@ -96,3 +96,24 @@ th {
 .error_message {
   padding: 30px 50px;
 }
+
+.create_box1 {
+  width: 35px;
+}
+
+.create_box2 {
+  width: 175px;
+}
+
+.create_box3 {
+  width: 40px;
+}
+
+.create_box4 {
+  width: 165px;
+}
+
+
+.field_with_errors {
+  background-color: red;
+}

@@ -49,13 +49,19 @@
 
   <%= form_with model: @book, url: '/books', method: :post do |f| %>
 
-    <h4>title</h4>
+    <div class="create_box1">
+    <%= f.label :title %>
+    </div>
+    <div class="create_box2">
     <%= f.text_field :title %>
-
-    <h4>body</h4>
+    </div>
+    <div class="create_box3">
+    <%= f.label :body %>
+    </div>
+    <div class="create_box4">
     <%= f.text_area :body %>
-
-    <div class="create_book">
+    </div>
+    <div>
     <%= f.submit 'Create Book' %>
     </div>
 
