@@ -32,15 +32,15 @@
 	<% if @book.errors.any? %>
   <div class="error_message_box">
     <div class="error_count">
-    <h2 class="error_count_message"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+      <h2 class="error_count_message"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
     </div>
 
     <div class="error_message">
-    <ul>
-    <% @book.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
+      <ul>
+       <% @book.errors.full_messages.each do |msg| %>
+           <li><%= msg %></li>
+       <% end %>
+      </ul>
     </div>
   </div>
 <% end %>
